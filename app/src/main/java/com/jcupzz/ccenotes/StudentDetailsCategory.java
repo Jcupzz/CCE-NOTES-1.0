@@ -77,7 +77,7 @@ public class StudentDetailsCategory extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 i=2;
-                Intent s2 = new Intent(StudentDetailsCategory.this,STwoSubjects.class);
+                Intent s2 = new Intent(StudentDetailsCategory.this,Branch.class);
                 startActivity(s2);
             }
         });

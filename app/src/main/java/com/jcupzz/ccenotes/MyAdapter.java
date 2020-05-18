@@ -20,10 +20,11 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     MainActivity mainActivity;
     ArrayList<DownModel> downModels;
-public static long DownloadId;
-public Boolean btn_status=true;
-public static Boolean download_completed_status=false;
 
+
+    public static long DownloadId;
+    public Boolean btn_status = true;
+    public static Boolean download_completed_status = false;
 
 
     public MyAdapter(MainActivity mainActivity, ArrayList<DownModel> downModels) {
@@ -31,15 +32,19 @@ public static Boolean download_completed_status=false;
         this.downModels = downModels;
     }
 
-    @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-
-        LayoutInflater layoutInflater = LayoutInflater.from(mainActivity.getBaseContext());
-        View view = layoutInflater.inflate(R.layout.elements, null, false);
-        return new MyViewHolder(view);
+    public int getItemCount() {
+        return downModels.size();
     }
 
+    @NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup,int i) {
+            LayoutInflater layoutInflater = LayoutInflater.from(mainActivity.getBaseContext());
+            View view = layoutInflater.inflate(R.layout.elements, viewGroup, false);
+            return new MyViewHolder(view);
+
+    }
     public void downloadFile(Context context, String fileName, String fileExtension, String destinationDirectory, String url) {
         DownloadManager downloadmanager = (DownloadManager) context.
                 getSystemService(Context.DOWNLOAD_SERVICE);
@@ -63,36 +68,44 @@ public static Boolean download_completed_status=false;
         myViewHolder.mDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(download_completed_status) {
-                    myViewHolder.mDownload.setForeground(ContextCompat.getDrawable(v.getContext(), R.drawable.ic_check_circle_black_24dp));
-                   // download_completed_status = false;
-                } else {
-                    if (btn_status) {
-                        downloadFile(myViewHolder.mName.getContext(), downModels.get(i).getName(), ".pdf", null, downModels.get(i).getLink());
-                        myViewHolder.mDownload.setForeground(ContextCompat.getDrawable(v.getContext(), R.drawable.ic_cancel_black_24dp));
-                        btn_status = false;
-                    } else if (btn_status == false) {
-                        DownloadManager downloadmanager = (DownloadManager) myViewHolder.mName.getContext().getSystemService(Context.DOWNLOAD_SERVICE);
-                        downloadmanager.remove(DownloadId);
-                        myViewHolder.mDownload.setForeground(ContextCompat.getDrawable(v.getContext(), R.drawable.ic_file_download_black_24dp));
-                        btn_status = true;
-                    } else {
+                String n = downModels.get(i).getName();
+                for(int var = 0;var<=n.length();var++)
+                {
+                    String l = "/storage/self/primary/Android/data/com.jcupzz.ccenotes/files/" + n+"("+MainActivity.s4s6s8var+")"+".pdf";
+                    File file = new File(l);
 
+                    if(file.exists()){
+                        myViewHolder.mDownload.setForeground(ContextCompat.getDrawable(v.getContext(), R.drawable.ic_check_circle_black_24dp));
+                    }
+                    else {
+                        downloadFile(myViewHolder.mName.getContext(), downModels.get(i).getName(), ".pdf", null, downModels.get(i).getLink());
                     }
                 }
 
 
-            }
+
+
+
+
+
+
+
+
+
+
+
+                /*for canceling download;
+                  DownloadManager downloadmanager = (DownloadManager) myViewHolder.mName.getContext().getSystemService(Context.DOWNLOAD_SERVICE);
+                  downloadmanager.remove(DownloadId);*/
+                }
+
+
+
         });
 
 
     }
 
-    @Override
-    public int getItemCount() {
-
-        return downModels.size();
-    }
 
 
 }

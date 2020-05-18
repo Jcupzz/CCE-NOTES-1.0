@@ -15,30 +15,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PdfViewer"/>
-        <activity android:name=".Register"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Login"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".UploadActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AboutUs"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".SEightSubjects"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".SSixSubjects"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".SFourSubjects"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".STwoSubjects"
-            android:screenOrientation="portrait"/>
+        <activity android:name=".Branch"></activity>
+        <activity android:name=".PdfViewer" />
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SEightSubjects"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SSixSubjects"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SFourSubjects"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".STwoSubjects"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".StudentDetailsCategory"
             android:screenOrientation="portrait" />
         <activity
             android:name=".StudentTeacherCategory"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name=".MainActivity" />
@@ -56,13 +66,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<receiver android:name=".DownloadReceiver"
-    android:enabled="true"
-    android:exported="true">
-    <intent-filter>
-        <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
-    </intent-filter>
-</receiver>
+
+        <receiver
+            android:name=".DownloadReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

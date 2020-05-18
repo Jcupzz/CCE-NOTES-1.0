@@ -41,6 +41,7 @@ TextView mName;
 
 
 
+
         mName = itemView.findViewById(R.id.name);
         mDownload = itemView.findViewById(R.id.down);
 mCardView= itemView.findViewById(R.id.cardview_id);
@@ -79,8 +80,9 @@ mDownload.setOnClickListener(this);
             }
 
         }
-        if(v.getId()==R.id.down)
+        if(v.getId()==R.id.branch_card_id)
         {
+            Toast.makeText(v.getContext(),"Done",Toast.LENGTH_SHORT).show();
             //mDownload.setForeground(ContextCompat.getDrawable(v.getContext(), R.drawable.ic_file_download_black_24dp));
         }
 
