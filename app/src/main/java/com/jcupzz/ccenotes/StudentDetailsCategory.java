@@ -77,7 +77,7 @@ public class StudentDetailsCategory extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 i=2;
-                Intent s2 = new Intent(StudentDetailsCategory.this,Branch.class);
+                Intent s2 = new Intent(StudentDetailsCategory.this,Subject.class);
                 startActivity(s2);
             }
         });
@@ -85,7 +85,7 @@ public class StudentDetailsCategory extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 i=4;
-                Intent s4 = new Intent(StudentDetailsCategory.this,SFourSubjects.class);
+                Intent s4 = new Intent(StudentDetailsCategory.this,Branch.class);
                 startActivity(s4);
             }
         });
@@ -93,7 +93,7 @@ public class StudentDetailsCategory extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 i=6;
-                Intent s6 = new Intent(StudentDetailsCategory.this,SSixSubjects.class);
+                Intent s6 = new Intent(StudentDetailsCategory.this,Branch.class);
                 startActivity(s6);
             }
         });
@@ -101,7 +101,7 @@ public class StudentDetailsCategory extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
                 i=8;
-                Intent s8 = new Intent(StudentDetailsCategory.this,SEightSubjects.class);
+                Intent s8 = new Intent(StudentDetailsCategory.this,Branch.class);
                 startActivity(s8);
             }
         });

@@ -12,7 +12,7 @@ public class Branch extends AppCompatActivity{
 RecyclerView mRecyclerView;
 RecyclerView.Adapter adapter;
 ArrayList<Branch_Names> branch_names;
-
+    public static int j=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

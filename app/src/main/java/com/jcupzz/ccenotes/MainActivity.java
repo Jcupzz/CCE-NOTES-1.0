@@ -37,7 +37,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import com.google.firebase.storage.StorageReference;
-import static com.jcupzz.ccenotes.SFourSubjects.j;
+import static com.jcupzz.ccenotes.Branch.j;
 import static com.jcupzz.ccenotes.StudentDetailsCategory.i;
 import java.util.ArrayList;
 
@@ -94,36 +94,40 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Intent intent = getIntent();
+        j = intent.getIntExtra("key",0);
+
         //s2
         if (i == 2 && j == 1) {
-            s4s6s8var = "Physics";
+            s4s6s8var = "Cs";
         }
         if (i == 2 && j == 2) {
-            s4s6s8var = "Chemistry";
+            s4s6s8var = "Physics";
         }
         if (i == 2 && j == 3) {
             s4s6s8var = "Graphics";
         }
         if (i == 2 && j == 4) {
-            s4s6s8var = "Mechanics";
+            s4s6s8var = "Chemistry";
         }
         if (i == 2 && j == 5) {
-            s4s6s8var = "Mechanical";
+            s4s6s8var = "Mechanics";
         }
         if (i == 2 && j == 6) {
-            s4s6s8var = "Civil";
-        }
-        if (i == 2 && j == 7) {
-            s4s6s8var = "Cs";
-        }
-        if (i == 2 && j == 8) {
             s4s6s8var = "Mathematics";
         }
-        if (i == 2 && j == 9) {
+        if (i == 2 && j == 7) {
+            s4s6s8var = "Civil";
+        }
+        if (i == 2 && j == 8) {
             s4s6s8var = "Electrical";
         }
-        if (i == 2 && j == 10) {
+        if (i == 2 && j == 9) {
             s4s6s8var = "Electronics";
+        }
+        if (i == 2 && j == 10) {
+            s4s6s8var = "Mechanical";
         }
 
         //s4

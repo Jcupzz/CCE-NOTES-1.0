@@ -1,5 +1,6 @@
 package com.jcupzz.ccenotes;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +28,8 @@ TextView mBranch_tv;
                 int pos = getAdapterPosition();
                 String branch_tv_name_holder = mBranch_tv.getText().toString();
                 Toast.makeText(v.getContext(),"At position = "+pos+" "+branch_tv_name_holder,Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(v.getContext(),Subject.class);
+                v.getContext().startActivity(intent);
             }
         });
 

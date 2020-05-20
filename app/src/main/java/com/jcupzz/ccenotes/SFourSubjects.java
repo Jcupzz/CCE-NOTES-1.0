@@ -1,4 +1,4 @@
-package com.jcupzz.ccenotes;
+/*package com.jcupzz.ccenotes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,7 +22,6 @@ public class SFourSubjects extends AppCompatActivity implements View.OnClickList
     Button s4_btn_be;
     //String [] cse = {"Mathematics","Computer Organization and Architecture","Operating Systems","Object Oriented Design and Programming"
     //      ,"Principles of Database Design","Free and Open Source Software Lab","Digital Systems Lab"};
-    public static int j=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,3 +99,4 @@ public class SFourSubjects extends AppCompatActivity implements View.OnClickList
         }
     }
 }
+*/

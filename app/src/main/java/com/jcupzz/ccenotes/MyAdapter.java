@@ -23,7 +23,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
 
     public static long DownloadId;
-    public Boolean btn_status = true;
     public static Boolean download_completed_status = false;
 
 
@@ -40,9 +39,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup,int i) {
-            LayoutInflater layoutInflater = LayoutInflater.from(mainActivity.getBaseContext());
-            View view = layoutInflater.inflate(R.layout.elements, viewGroup, false);
-            return new MyViewHolder(view);
+        LayoutInflater layoutInflater = LayoutInflater.from(mainActivity.getBaseContext());
+        View view = layoutInflater.inflate(R.layout.elements, viewGroup, false);
+        return new MyViewHolder(view);
 
     }
     public void downloadFile(Context context, String fileName, String fileExtension, String destinationDirectory, String url) {
@@ -64,23 +63,19 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     public void onBindViewHolder(@NonNull final MyViewHolder myViewHolder, final int i) {
         myViewHolder.mName.setText(downModels.get(i).getName());
         //myViewHolder.mLink.setText(downModels.get(i).getLink());
-
         myViewHolder.mDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String n = downModels.get(i).getName();
-                for(int var = 0;var<=n.length();var++)
-                {
-                    String l = "/storage/self/primary/Android/data/com.jcupzz.ccenotes/files/" + n+"("+MainActivity.s4s6s8var+")"+".pdf";
-                    File file = new File(l);
-
-                    if(file.exists()){
-                        myViewHolder.mDownload.setForeground(ContextCompat.getDrawable(v.getContext(), R.drawable.ic_check_circle_black_24dp));
-                    }
-                    else {
-                        downloadFile(myViewHolder.mName.getContext(), downModels.get(i).getName(), ".pdf", null, downModels.get(i).getLink());
-                    }
+                String l = "/storage/self/primary/Android/data/com.jcupzz.ccenotes/files/" + n + "(" + MainActivity.s4s6s8var + ")" + ".pdf";
+                File file = new File(l);
+                if (file.exists()) {
+                    myViewHolder.mDownload.setForeground(ContextCompat.getDrawable(v.getContext(), R.drawable.ic_check_circle_black_24dp));
+                    Toast.makeText(v.getContext(),"File Exsists!",Toast.LENGTH_SHORT).show();
+                } else {
+                    downloadFile(myViewHolder.mName.getContext(), downModels.get(i).getName(), ".pdf", null, downModels.get(i).getLink());
                 }
+            }
 
 
 
@@ -97,7 +92,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
                 /*for canceling download;
                   DownloadManager downloadmanager = (DownloadManager) myViewHolder.mName.getContext().getSystemService(Context.DOWNLOAD_SERVICE);
                   downloadmanager.remove(DownloadId);*/
-                }
+
 
 
 

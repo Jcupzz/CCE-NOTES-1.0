@@ -50,4 +50,41 @@
     <string name="todoss">TODO</string>
     <string name="business_economics">Business Economics</string>
 
+    <string-array name="S2_SUBJECTS_ARRAY">
+        <item>Computer Programing</item>
+        <item>Engineering Physics</item>
+        <item>Engineering Graphics</item>
+        <item>Engineering Chemistry</item>
+        <item>Engineering Mechanics</item>
+        <item>Engineering Mathematics</item>
+        <item>Basics of Civil Engineering</item>
+        <item>Basics of Electrical Engineering</item>
+        <item>Basics of Electronics Engineering</item>
+        <item>Basics of Mechanical Engineering</item>
+    </string-array>
+    <string-array name="S4_CSE_ARRAY">
+        <item>Operating Systems</item>
+        <item>Digital Systems Lab</item>
+        <item>Business Economics</item>
+        <item>Engineering Mathematics</item>
+        <item>Principles of Database Design</item>
+        <item>Free and Open Source Software Lab</item>
+        <item>Computer Organization and Architecture</item>
+        <item>Object Oriented Design and Programming</item>
+    </string-array>
+    <string-array name="S6_CSE_ARRAY">
+        <item>Web Technology</item>
+        <item>Compiler Design</item>
+        <item>Computer Networks</item>
+        <item>Principles of Management</item>
+        <item>Design and Analysis of Algorithms</item>
+        <item>Software Engineering and Project Management</item>
+
+    </string-array>
+    <string-array name="S8_CSE_ARRAY">
+        <item>Embedded Systems</item>
+        <item>Data Mining and Ware Housing</item>
+        <item>Environment Impact Assessment</item>
+        <item>Principles of Information Security</item>
+    </string-array>
 </resources>

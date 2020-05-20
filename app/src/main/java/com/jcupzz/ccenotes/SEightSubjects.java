@@ -1,4 +1,4 @@
-package com.jcupzz.ccenotes;
+/*package com.jcupzz.ccenotes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -77,3 +77,4 @@ s8_btn_eia.setOnClickListener(this);
     }
 
 }
+*/

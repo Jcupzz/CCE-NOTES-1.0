@@ -80,11 +80,7 @@ mDownload.setOnClickListener(this);
             }
 
         }
-        if(v.getId()==R.id.branch_card_id)
-        {
-            Toast.makeText(v.getContext(),"Done",Toast.LENGTH_SHORT).show();
-            //mDownload.setForeground(ContextCompat.getDrawable(v.getContext(), R.drawable.ic_file_download_black_24dp));
-        }
+
 
 
     }

@@ -1,4 +1,4 @@
-package com.jcupzz.ccenotes;
+/*package com.jcupzz.ccenotes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -90,6 +90,6 @@ public class SSixSubjects extends AppCompatActivity implements View.OnClickListe
 
 
 
-
+*/
 
 
