@@ -39,6 +39,8 @@ import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.StorageReference;
 import static com.jcupzz.ccenotes.Branch.j;
 import static com.jcupzz.ccenotes.StudentDetailsCategory.i;
+import static com.jcupzz.ccenotes.Subject.k;
+
 import java.util.ArrayList;
 
 import io.opencensus.resource.Resource;
@@ -131,64 +133,64 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //s4
-        if (i == 4 && j == 1) {
-            s4s6s8var = "S4_CSE_MATHS";
-        }
-        if (i == 4 && j == 2) {
+        if (i == 4 && j == 1 && k==1) {
             s4s6s8var = "S4_CSE_OS";
         }
-        if (i == 4 && j == 3) {
+        if (i == 4 && j == 2 && k==1) {
             s4s6s8var = "S4_CSE_DSL";
         }
-        if (i == 4 && j == 4) {
+        if (i == 4 && j == 3 && k==1) {
+            s4s6s8var = "S4_CSE_BE";
+        }
+        if (i == 4 && j == 4 && k==1) {
+            s4s6s8var = "S4_CSE_MATHS";
+        }
+        if (i == 4 && j == 5 && k==1) {
             s4s6s8var = "S4_CSE_PDD";
         }
-        if (i == 4 && j == 5) {
-            s4s6s8var = "S4_CSE_COAA";
-        }
-        if (i == 4 && j == 6) {
-            s4s6s8var = "S4_CSE_OPDAP";
-        }
-        if (i == 4 && j == 7) {
+        if (i == 4 && j == 6 && k==1) {
             s4s6s8var = "S4_CSE_FAOSSL";
         }
-        if (i == 4 && j == 8) {
-            s4s6s8var = "S4_CSE_BE";
+        if (i == 4 && j == 7 && k==1) {
+            s4s6s8var = "S4_CSE_COAA";
+        }
+        if (i == 4 && j == 8 && k==1) {
+            s4s6s8var = "S4_CSE_OPDAP";
         }
 
 
         //s6
-        if (i == 6 && j == 1) {
-            s4s6s8var = "S6_CSE_CD";
-        }
-        if (i == 6 && j == 2) {
-            s4s6s8var = "S6_CSE_CN";
-        }
-        if (i == 6 && j == 3) {
+        if (i == 6 && j == 1 && k==1) {
             s4s6s8var = "S6_CSE_WT";
         }
-        if (i == 6 && j == 4) {
+        if (i == 6 && j == 2 && k==1) {
+            s4s6s8var = "S6_CSE_CD";
+        }
+        if (i == 6 && j == 3 && k==1) {
+            s4s6s8var = "S6_CSE_CN";
+        }
+        if (i == 6 && j == 4 && k==1) {
             s4s6s8var = "S6_CSE_POM";
         }
-        if (i == 6 && j == 5) {
+        if (i == 6 && j == 5 && k==1) {
             s4s6s8var = "S6_CSE_DAAOA";
         }
-        if (i == 6 && j == 6) {
+        if (i == 6 && j == 6 && k==1) {
             s4s6s8var = "S6_CSE_SEAPM";
         }
 
 
         //s8
-        if (i == 8 && j == 1) {
-            s4s6s8var = "S8_CSE_DM";
-        }
-        if (i == 8 && j == 2) {
-            s4s6s8var = "S8_CSE_EIA";
-        }
-        if (i == 8 && j == 3) {
+        if (i == 8 && j == 1 && k==1) {
             s4s6s8var = "S8_CSE_ES";
         }
-        if (i == 8 && j == 4) {
+        if (i == 8 && j == 2 && k==1) {
+            s4s6s8var = "S8_CSE_DM";
+        }
+        if (i == 8 && j == 3 && k==1) {
+            s4s6s8var = "S8_CSE_EIA";
+        }
+        if (i == 8 && j == 4 && k==1) {
             s4s6s8var = "S8_CSE_POIS";
         }
 
