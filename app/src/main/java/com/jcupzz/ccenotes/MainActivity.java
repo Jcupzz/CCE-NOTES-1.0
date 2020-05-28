@@ -4,14 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,12 +22,16 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
 import android.widget.Button;
 
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieDrawable;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -51,12 +58,14 @@ public class MainActivity extends AppCompatActivity {
     public static String renamed_edit_text_name;
     public String rename_linkz;
     FirebaseFirestore db;
+    LottieAnimationView lottieAnimationView;
     RecyclerView mRecyclerView;
     ArrayList<DownModel> downModelArrayList = new ArrayList<>();
     MyAdapter myAdapter;
     Button upload_btn;
     SharedPreferences sharedpreferences;
-
+//1==teacher
+//0==student
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,10 +77,14 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "You will need Internet Connection", Toast.LENGTH_LONG).show();
         }
 
-
         upload_btn = findViewById(R.id.upload_btn_id);
-
-
+        lottieAnimationView = findViewById(R.id.animation_view);
+        lottieAnimationView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"No Content Found",Toast.LENGTH_SHORT).show();
+            }
+        });
         //sharedpreferences=getSharedPreferences();
         //StudentTeacherCategory.stc_integer=0;
 
@@ -211,6 +224,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recycle);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 
     private void dataFromFirebase() {
@@ -221,15 +235,25 @@ public class MainActivity extends AppCompatActivity {
         db.collection(s4s6s8var)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+
+                    @SuppressLint("ResourceType")
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
-                        for (DocumentSnapshot documentSnapshot : task.getResult()) {
 
-                            DownModel downModel = new DownModel(documentSnapshot.getString("name"),
-                                    documentSnapshot.getString("link"));
-                            downModelArrayList.add(downModel);
+                        if(!(task.getResult().isEmpty()))
+                        {
+                            for (DocumentSnapshot documentSnapshot : task.getResult()) {
 
+                                DownModel downModel = new DownModel(documentSnapshot.getString("name"),
+                                        documentSnapshot.getString("link"));
+                                downModelArrayList.add(downModel);
+
+                            }
+                        }
+                        else{
+                            mRecyclerView.setVisibility(View.GONE);
+                            lottieAnimationView.setVisibility(View.VISIBLE);
                         }
                         myAdapter = new MyAdapter(MainActivity.this, downModelArrayList);
                         mRecyclerView.setAdapter(myAdapter);

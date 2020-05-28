@@ -58,12 +58,6 @@ public class UploadActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-
-
-
-
-
-
         btn_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
