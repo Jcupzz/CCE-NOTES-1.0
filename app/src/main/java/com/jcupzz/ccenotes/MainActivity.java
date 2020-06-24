@@ -321,6 +321,57 @@ public class MainActivity extends AppCompatActivity {
             s4s6s8var = "S6_EEE_BI";
         }
 
+        //4
+
+        if (i == 6 && j == 1 && k==4) {
+            s4s6s8var = "S6_MECH_DOM";
+        }
+        if (i == 6 && j == 2 && k==4) {
+            s4s6s8var = "S6_MECH_HAMT";
+        }
+        if (i == 6 && j == 3 && k==4) {
+            s4s6s8var = "S6_MECH_ME";
+        }
+        if (i == 6 && j == 4 && k==4) {
+            s4s6s8var = "S6_MECH_MAI";
+        }
+        if (i == 6 && j == 5 && k==4) {
+            s4s6s8var = "S6_MECH_AMT";
+        }
+        if (i == 6 && j == 6 && k==4) {
+            s4s6s8var = "S6_MECH_CADAA";
+        }
+
+        //5
+
+        if (i == 6 && j == 1 && k==5) {
+            s4s6s8var = "S6_CE_CE";
+        }
+        if (i == 6 && j == 2 && k==5) {
+            s4s6s8var = "S6_CE_POM";
+        }
+        if (i == 6 && j == 3 && k==5) {
+            s4s6s8var = "S6_CE_GIT";
+        }
+        if (i == 6 && j == 4 && k==5) {
+            s4s6s8var = "S6_CE_DOCS";
+        }
+        if (i == 6 && j == 5 && k==5) {
+            s4s6s8var = "S6_CE_DOHS";
+        }
+        if (i == 6 && j == 6 && k==5) {
+            s4s6s8var = "S6_CE_TE1";
+        }
+        if (i == 6 && j == 7 && k==5) {
+            s4s6s8var = "S6_CE_TEL";
+        }
+        if (i == 6 && j == 8 && k==5) {
+            s4s6s8var = "S6_CE_CACEL";
+        }
+        if (i == 6 && j == 9 && k==5) {
+            s4s6s8var = "S6_CE_CPACT";
+        }
+
         //s8
         //1
         if (i == 8 && j == 1 && k==1) {
@@ -336,9 +387,39 @@ public class MainActivity extends AppCompatActivity {
             s4s6s8var = "S8_CSE_POIS";
         }
 
+        //2
 
+        if (i == 8 && j == 1 && k==2) {
+            s4s6s8var = "S8_EC_NE";
+        }
+        if (i == 8 && j == 2 && k==2) {
+            s4s6s8var = "S8_EC_DM";
+        }
+        if (i == 8 && j == 3 && k==2) {
+            s4s6s8var = "S8_EC_SC";
+        }
+        if (i == 8 && j == 4 && k==2) {
+            s4s6s8var = "S8_EC_ACS";
+        }
 
+        //3
 
+        //4
+
+        if (i == 8 && j == 1 && k==4) {
+            s4s6s8var = "S8_MECH_IS";
+        }
+        if (i == 8 && j == 2 && k==4) {
+            s4s6s8var = "S8_MECH_IE";
+        }
+        if (i == 8 && j == 3 && k==4) {
+            s4s6s8var = "S8_MECH_MNM";
+        }
+        if (i == 8 && j == 4 && k==4) {
+            s4s6s8var = "S8_MECH_DOME2";
+        }
+
+        //
         setUpFB();
         setUpRV();
         dataFromFirebase();

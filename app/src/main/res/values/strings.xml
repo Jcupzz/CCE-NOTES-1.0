@@ -139,7 +139,7 @@
         <item>Transportational Engineering l</item>
         <item>Transportation Engineering lab</item>
         <item>Computer Aided Civil Engineering Lab</item>
-        <item>Computer Programming and Computational Techniques </item>
+        <item>Computer Programming and\n  Computational Techniques </item>
     </string-array>
 
     <string-array name="S6_EEE_ARRAY">
