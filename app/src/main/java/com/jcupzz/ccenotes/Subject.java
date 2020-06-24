@@ -30,17 +30,60 @@ String[] var;
         {
             var = getResources().getStringArray(R.array.S2_SUBJECTS_ARRAY);
         }
+        //s4
         if(i==4&&k==1)
         {
             var = getResources().getStringArray(R.array.S4_CSE_ARRAY);
         }
+        if(i==4&&k==2)
+        {
+            var = getResources().getStringArray(R.array.S4_EC_ARRAY);
+        }
+        if(i==4&&k==3)
+        {
+            var = getResources().getStringArray(R.array.S4_EEE_ARRAY);
+        }
+        if(i==4&&k==4)
+        {
+            var = getResources().getStringArray(R.array.S4_MECH_ARRAY);
+        }
+        if(i==4&&k==5)
+        {
+            var = getResources().getStringArray(R.array.S4_CIVIL_ARRAY);
+        }
+        //s6
         if(i==6&&k==1)
         {
             var = getResources().getStringArray(R.array.S6_CSE_ARRAY);
         }
+        if(i==6&&k==2)
+        {
+            var = getResources().getStringArray(R.array.S6_EC_ARRAY);
+        }
+        if(i==6&&k==3)
+        {
+            var = getResources().getStringArray(R.array.S6_EEE_ARRAY);
+        }
+        if(i==6&&k==4)
+        {
+            var = getResources().getStringArray(R.array.S6_MECH_ARRAY);
+        }
+        if(i==6&&k==5)
+        {
+            var = getResources().getStringArray(R.array.S6_CIVIL_ARRAY);
+        }
+        //s8
         if(i==8&&k==1)
         {
             var = getResources().getStringArray(R.array.S8_CSE_ARRAY);
+        }
+        if(i==8&&k==2)
+        {
+            var = getResources().getStringArray(R.array.S8_EC_ARRAY);
+        }
+        if(i==8&&k==4)
+        {
+            var = getResources().getStringArray(R.array.S8_MECH_ARRAY);
         }
 
         setUpRecyclerView();

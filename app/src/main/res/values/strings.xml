@@ -62,6 +62,44 @@
         <item>Basics of Electronics Engineering</item>
         <item>Basics of Mechanical Engineering</item>
     </string-array>
+
+    <!--S4-->
+
+    <string-array name="S4_MECH_ARRAY">
+        <item>Fluid Machinery</item>
+        <item>Business Economics</item>
+        <item>Thermal Engineering</item>
+        <item>Manufacturing Technology</item>
+        <item>Advanced Mechanics of solids</item>
+        <item>Probability distribution,Transforms and Numerical methods</item>
+    </string-array>
+
+    <string-array name="S4_CIVIL_ARRAY">
+        <item>Life Skills</item>
+        <item>Fluid Mechanics 2</item>
+        <item>Structural Analysis 1</item>
+        <item>Construction Technology</item>
+        <item>Geotechnical Engineering 1</item>
+        <item>Probability Distributions, Transforms and Numerical Methods</item>
+    </string-array>
+
+    <string-array name="S4_EEE_ARRAY">
+        <item>Life Skills</item>
+        <item>Material Science</item>
+        <item>Measurements and Instruments</item>
+        <item>Digital Electronics and Logic Design</item>
+        <item>Synchronous and Induction Machines</item>
+        <item>Probability distribution,Transforms and Numerical methods</item>
+    </string-array>
+
+    <string-array name="S4_EC_ARRAY">
+        <item>Lifeskills</item>
+        <item>Signals and Systems</item>
+        <item>Computer Organization</item>
+        <item>Analog Integrated Circuits</item>
+        <item>Analog Communication Engineering</item>
+        <item>Probability Distributions , Random Processes</item>
+    </string-array>
     <string-array name="S4_CSE_ARRAY">
         <item>Operating Systems</item>
         <item>Digital Systems Lab</item>
@@ -72,6 +110,9 @@
         <item>Computer Organization and Architecture</item>
         <item>Object Oriented Design and Programming</item>
     </string-array>
+
+    <!--S6-->
+
     <string-array name="S6_CSE_ARRAY">
         <item>Web Technology</item>
         <item>Compiler Design</item>
@@ -79,12 +120,79 @@
         <item>Principles of Management</item>
         <item>Design and Analysis of Algorithms</item>
         <item>Software Engineering and Project Management</item>
-
     </string-array>
+    <string-array name="S6_MECH_ARRAY">
+        <item>Dynamics of machines </item>
+        <item>Heat and mass transfer</item>
+        <item>Maintanence Engineering</item>
+        <item>Metrology and instrumentations </item>
+        <item>Advanced manufacturing technology </item>
+        <item>Computer aided design and analysis </item>
+    </string-array>
+
+    <string-array name="S6_CIVIL_ARRAY">
+        <item>Comprehensive Exam</item>
+        <item>Principles of Management </item>
+        <item>Ground Improvement Techniques </item>
+        <item>Design of Concrete Structures</item>
+        <item>Design of Hydraulic Structures </item>
+        <item>Transportational Engineering l</item>
+        <item>Transportation Engineering lab</item>
+        <item>Computer Aided Civil Engineering Lab</item>
+        <item>Computer Programming and Computational Techniques </item>
+    </string-array>
+
+    <string-array name="S6_EEE_ARRAY">
+        <item>Electric Drives</item>
+        <item>Electromagnetics</item>
+        <item>Power System Analysis</item>
+        <item>Advanced Control Theory</item>
+        <item>Principles Of Management</item>
+        <item>Biomedical Instrumentation</item>
+    </string-array>
+
+    <string-array name="S6_EC_ARRAY">
+        <item>VLSI</item>
+        <item>Embedded System</item>
+        <item>Comprehensive Exam</item>
+        <item>Microcontroller Lab</item>
+        <item>Digital Communication</item>
+        <item>Digital Image Processing</item>
+        <item>Object Oriented Programming</item>
+        <item>Antenna and Wave Propagation</item>
+        <item>Communication Engg Lab (Analog and Digital)</item>
+    </string-array>
+
+
+    <!--S8-->
+
+
     <string-array name="S8_CSE_ARRAY">
         <item>Embedded Systems</item>
         <item>Data Mining and Ware Housing</item>
         <item>Environment Impact Assessment</item>
         <item>Principles of Information Security</item>
+    </string-array>
+    
+    <string-array name="S8_MECH_ARRAY">
+        <item>Industrial Safety</item>
+        <item>Industrial Engineering</item>
+        <item>Micro Nano Manufacturing </item>
+        <item>Design Of Machine Elements 2</item>
+    </string-array>
+    
+    <string-array name="S8_EC_ARRAY">
+        <item>Nano Electronics</item>
+        <item>Disaster Management</item>
+        <item>Secure Communication</item>
+        <item>Advanced Communication System</item>
+    </string-array>
+
+    <string-array name="S8_EEE_ARRAY">
+        <item>Nanoelectronics</item>
+        <item>Advanced Communication Systems</item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 </resources>

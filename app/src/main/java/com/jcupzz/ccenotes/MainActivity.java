@@ -146,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //s4
+        //1
         if (i == 4 && j == 1 && k==1) {
             s4s6s8var = "S4_CSE_OS";
         }
@@ -170,9 +171,88 @@ public class MainActivity extends AppCompatActivity {
         if (i == 4 && j == 8 && k==1) {
             s4s6s8var = "S4_CSE_OPDAP";
         }
+        //2
+        if (i == 4 && j == 1 && k==2) {
+            s4s6s8var = "S4_EC_LS";
+        }
+        if (i == 4 && j == 2 && k==2) {
+            s4s6s8var = "S4_EC_SAS";
+        }
+        if (i == 4 && j == 3 && k==2) {
+            s4s6s8var = "S4_EC_CO";
+        }
+        if (i == 4 && j == 4 && k==2) {
+            s4s6s8var = "S4_EC_AIC";
+        }
+        if (i == 4 && j == 5 && k==2) {
+            s4s6s8var = "S4_EC_ACE";
+        }
+        if (i == 4 && j == 6 && k==2) {
+            s4s6s8var = "S4_EC_PDRP";
+        }
+        //3
+        if (i == 4 && j == 1 && k==3) {
+            s4s6s8var = "S4_EE_LS";
+        }
+        if (i == 4 && j == 2 && k==3) {
+            s4s6s8var = "S4_EE_MS";
+        }
+        if (i == 4 && j == 3 && k==3) {
+            s4s6s8var = "S4_EE_MAI";
+        }
+        if (i == 4 && j == 4 && k==3) {
+            s4s6s8var = "S4_EE_DEALD";
+        }
+        if (i == 4 && j == 5 && k==3) {
+            s4s6s8var = "S4_EE_SAIM";
+        }
+        if (i == 4 && j == 6 && k==3) {
+            s4s6s8var = "S4_EE_PDTANM";
+        }
+        //4
+        if (i == 4 && j == 1 && k==4) {
+            s4s6s8var = "S4_MECH_FM";
+        }
+        if (i == 4 && j == 2 && k==4) {
+            s4s6s8var = "S4_MECH_BE";
+        }
+        if (i == 4 && j == 3 && k==4) {
+            s4s6s8var = "S4_MECH_TE";
+        }
+        if (i == 4 && j == 4 && k==4) {
+            s4s6s8var = "S4_MECH_MT";
+        }
+        if (i == 4 && j == 5 && k==4) {
+            s4s6s8var = "S4_MECH_AMOS";
+        }
+        if (i == 4 && j == 6 && k==4) {
+            s4s6s8var = "S4_MECH_PDTANM";
+        }
+        //5
+        if (i == 4 && j == 1 && k==5) {
+            s4s6s8var = "S4_CE_LS";
+        }
+        if (i == 4 && j == 2 && k==5) {
+            s4s6s8var = "S4_CE_FM";
+        }
+        if (i == 4 && j == 3 && k==5) {
+            s4s6s8var = "S4_CE_SA";
+        }
+        if (i == 4 && j == 4 && k==5) {
+            s4s6s8var = "S4_CE_CT";
+        }
+        if (i == 4 && j == 5 && k==5) {
+            s4s6s8var = "S4_CE_GE";
+        }
+        if (i == 4 && j == 6 && k==5) {
+            s4s6s8var = "S4_CE_PDTANM";
+        }
+
+
 
 
         //s6
+        //1
         if (i == 6 && j == 1 && k==1) {
             s4s6s8var = "S6_CSE_WT";
         }
@@ -191,9 +271,58 @@ public class MainActivity extends AppCompatActivity {
         if (i == 6 && j == 6 && k==1) {
             s4s6s8var = "S6_CSE_SEAPM";
         }
+        //2
+        if (i == 6 && j == 1 && k==2) {
+            s4s6s8var = "S6_EC_VLSI";
+        }
+        if (i == 6 && j == 2 && k==2) {
+            s4s6s8var = "S6_EC_ES";
+        }
+        if (i == 6 && j == 3 && k==2) {
+            s4s6s8var = "S6_EC_CE";
+        }
+        if (i == 6 && j == 4 && k==2) {
+            s4s6s8var = "S6_EC_ML";
+        }
+        if (i == 6 && j == 5 && k==2) {
+            s4s6s8var = "S6_EC_DC";
+        }
+        if (i == 6 && j == 6 && k==2) {
+            s4s6s8var = "S6_EC_DIP";
+        }
+        if (i == 6 && j == 7 && k==2) {
+            s4s6s8var = "S6_EC_OOP";
+        }
+        if (i == 6 && j == 8 && k==2) {
+            s4s6s8var = "S6_EC_AAWP";
+        }
+        if (i == 6 && j == 9 && k==2) {
+            s4s6s8var = "S6_EC_CEL";
+        }
 
+        //3
+
+        if (i == 6 && j == 1 && k==3) {
+            s4s6s8var = "S6_EEE_ED";
+        }
+        if (i == 6 && j == 2 && k==3) {
+            s4s6s8var = "S6_EEE_EM";
+        }
+        if (i == 6 && j == 3 && k==3) {
+            s4s6s8var = "S6_EEE_PSA";
+        }
+        if (i == 6 && j == 4 && k==3) {
+            s4s6s8var = "S6_EEE_ACT";
+        }
+        if (i == 6 && j == 5 && k==3) {
+            s4s6s8var = "S6_EEE_POM";
+        }
+        if (i == 6 && j == 6 && k==3) {
+            s4s6s8var = "S6_EEE_BI";
+        }
 
         //s8
+        //1
         if (i == 8 && j == 1 && k==1) {
             s4s6s8var = "S8_CSE_ES";
         }
@@ -206,6 +335,8 @@ public class MainActivity extends AppCompatActivity {
         if (i == 8 && j == 4 && k==1) {
             s4s6s8var = "S8_CSE_POIS";
         }
+
+
 
 
         setUpFB();
