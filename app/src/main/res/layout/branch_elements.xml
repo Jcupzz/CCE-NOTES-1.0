@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/branch_root_Ll_id"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,17 +34,32 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/img_v"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:scaleType="fitCenter"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    app:lottie_rawRes="@raw/cs_lottie"
+                     />
 
                 <TextView
                     android:id="@+id/branch_name_tv_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="bottom"
                     android:fontFamily="@font/opensans"
                     android:text="Example"
-                    android:textAlignment="center"
+                    android:background="@color/colorPrimaryDark"
                     android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
                     android:textSize="22sp"
                     android:textStyle="bold" />
 

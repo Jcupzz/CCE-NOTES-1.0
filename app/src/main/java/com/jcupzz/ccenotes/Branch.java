@@ -1,14 +1,8 @@
 package com.jcupzz.ccenotes;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.RecyclerView.Adapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -27,13 +21,13 @@ public class Branch extends AppCompatActivity{
 
 
         branch_names = new ArrayList<Branch_Names>();
-        branch_names.add(new Branch_Names(null));
-        branch_names.add(new Branch_Names("Computer Science\nEngineering"));
-        branch_names.add(new Branch_Names("Electrical\nEngineering"));
-        branch_names.add(new Branch_Names("Electronics\nEngineering"));
-        branch_names.add(new Branch_Names("Mechanical\nEngineering"));
-        branch_names.add(new Branch_Names("Civil\nEngineering"));
-        branch_names.add(new Branch_Names(null));
+        branch_names.add(new Branch_Names(R.raw.spider_lottie,null));
+        branch_names.add(new Branch_Names(R.raw.cs_three, "Computer Science\nEngineering"));
+        branch_names.add(new Branch_Names(R.raw.ec_lottie, "Electrical\nEngineering"));
+        branch_names.add(new Branch_Names(R.raw.eee_lottie, "Electronics\nEngineering"));
+        branch_names.add(new Branch_Names(R.raw.mech_lottie, "Mechanical\nEngineering"));
+        branch_names.add(new Branch_Names(R.raw.civil_one, "Civil\nEngineering"));
+        branch_names.add(new Branch_Names(R.raw.spider_lottie, null));
 
         adapter = new Branch_Adapter(this, branch_names);
         viewPager = findViewById(R.id.viewPager);

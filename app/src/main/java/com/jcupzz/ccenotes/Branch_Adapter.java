@@ -5,12 +5,15 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
+
+import com.airbnb.lottie.LottieAnimationView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +50,10 @@ public class Branch_Adapter extends PagerAdapter {
         View branch_view = layoutInflater.inflate(R.layout.branch_elements, container, false);
 
         TextView textView;
+        LottieAnimationView imageView;
+        imageView = branch_view.findViewById(R.id.img_v);
         textView = branch_view.findViewById(R.id.branch_name_tv_id);
+        imageView.setAnimation(branch_names_list.get(position).getB_image());
         textView.setText(branch_names_list.get(position).getB_name());
         container.addView(branch_view,0);
 
